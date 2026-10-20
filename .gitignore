@@ -1,0 +1,9 @@
+# Admin login hash and runtime secrets (created by the dashboard)
+data/admin.json.php
+data/smtp.json.php
+data/leads.json.php
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store

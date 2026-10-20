@@ -1,0 +1,284 @@
+/* Dial Infini — final design layer (loads LAST).
+   Goals: small, friendly, crisp type (Dialpad / Quo feel) and solid high-contrast text — no pale, washed-out or blurry copy. */
+:root{
+  --font:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --sans:var(--font);
+  --ink:#0A1F30;          /* headings  — near-black navy, 16:1 on white */
+  --sea:#0A1F30;
+  --body:#2B4155;         /* paragraphs — 9.5:1 on white */
+  --muted:#2B4155;
+  --sea-soft:#2B4155;
+  --brand:#0287BF;        /* fills / buttons */
+  --brand-text:#016A9C;   /* brand-coloured TEXT on light bg — 5.8:1 */
+  --brand-dark:#015F8C;
+  --line-b:rgba(10,31,48,.12);
+  --hair:rgba(10,31,48,.10);
+}
+html{font-size:15px;-webkit-text-size-adjust:100%}
+body{font-family:var(--font)!important;font-size:1rem;line-height:1.62;color:var(--body);letter-spacing:0;font-feature-settings:normal;background:#fff!important;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+body:after{display:none!important}
+
+/* ---------- headings: smaller, bolder, normal tracking ---------- */
+h1,h2,h3,h4,h5,.hero-title,.statement-title,.section-title h2,.h1-sm,.scard h3,.page-hero h1,.cta-band h2,.brand,.stat-v,.rate-v,.marquee span,.bp-v{
+  font-family:var(--font)!important;color:var(--ink);font-weight:500;letter-spacing:-.022em;
+}
+.hero-title{font-size:clamp(2.1rem,3.7vw,3.3rem);line-height:1.1;letter-spacing:-.03em;margin-bottom:1rem}
+.statement-title{font-size:clamp(1.65rem,2.8vw,2.35rem);line-height:1.25;max-width:860px}
+.section-title h2,.h1-sm{font-size:clamp(1.55rem,2.5vw,2.1rem);line-height:1.2}
+.page-hero h1{font-size:clamp(2rem,3.6vw,2.9rem);line-height:1.12}
+.cta-band h2{font-size:clamp(1.6rem,2.8vw,2.3rem)}
+.scard h3{font-size:clamp(1.55rem,2.3vw,2rem);line-height:1.15}
+.icon-card h3,.step h3,.pcard h3{font-size:1.05rem;font-weight:500}
+h3{font-size:1.1rem}
+
+/* paragraphs: solid, readable */
+p,li{color:var(--body)}
+.hero-text{font-size:1.06rem;color:var(--body);max-width:500px}
+.section-title p,.lead-sm,.page-hero .lead{font-size:1.03rem;color:var(--body)}
+.scard p,.icon-card p,.step p,.stat-item p,.rate-card p,.hero-note{color:var(--body);font-size:.96rem}
+.stat-item p{font-size:.98rem}
+.check-list li{font-weight:500;color:var(--ink);font-size:.97rem}
+
+/* brand-coloured words: solid colour, never gradient/transparent text */
+.hl,.hero-title .hl,.statement-title .hl,.split .hl,.split .hl .sw>i,.scrub .hl,.scrub .hl .sc,.scrub .hl .sc.on,.page-hero .hl,.section-title .hl,.h1-sm .hl{
+  background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;
+  -webkit-text-fill-color:currentColor!important;color:var(--brand-text)!important;font-family:var(--font)!important;font-weight:500;animation:none!important
+}
+.cta-band .hl,.cta-band .split .hl .sw>i,.on-dark .hl{color:#8fdcff!important}
+
+/* kill the pale scroll-scrub + word-slide effects (they made headings look faded) */
+.scrub .sc,.scrub .sc.on{color:var(--ink)!important;transition:none}
+.scrub .hl .sc,.scrub .hl .sc.on{color:var(--brand-text)!important}
+.sw{overflow:visible;padding:0;margin:0}
+.sw>i{transform:none!important;transition:none!important}
+
+/* kill blur-in reveals — plain, quick fade-up only */
+.reveal{filter:none!important;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero .eyebrow,.hero-text,.hero .d-flex,.hero-note,.hero .store-btns{animation-duration:.6s}
+.hero-visual{animation-duration:.8s}
+.hero-cv{display:none!important}                 /* particle canvas = visual noise */
+.hero-bg:after{opacity:.18!important}
+.chip,.site-header,.btn-ghost{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.hero-visual:before{filter:none;opacity:.6}
+
+/* ---------- header / nav ---------- */
+.topbar{background:var(--ink);color:#fff;font-size:.8rem;font-weight:500}
+.topbar a{color:#8fdcff;font-weight:500}
+.site-header{background:#fff!important;border-bottom:1px solid var(--line-b)}
+.navbar{padding:.6rem 0}
+.brand{font-size:1.15rem;font-weight:600;letter-spacing:-.03em;color:var(--ink)}
+.brand img{height:28px}
+.nav-link{font-family:var(--font);font-size:.92rem;font-weight:500;color:var(--ink)!important;padding:.45rem .8rem!important}
+.nav-link:hover,.nav-link.active{color:var(--brand-text)!important;background:#eaf5fb!important;border-radius:8px}
+.mobile-links a{font-weight:500;color:var(--ink)}
+
+/* ---------- buttons ---------- */
+.btn{font-family:var(--font);font-weight:500;font-size:.92rem;letter-spacing:0;border-radius:10px}
+.btn-lg-pill{padding:.72rem 1.3rem;font-size:.95rem;border-radius:10px}
+.btn-sm-pill{padding:.5rem .95rem;font-size:.84rem;border-radius:9px}
+.btn-brand{background:var(--brand);color:#fff!important;box-shadow:0 6px 16px -8px rgba(2,135,191,.8)}
+.btn-brand:hover{background:var(--brand-dark)}
+.btn-ghost{background:#fff;color:var(--ink);border:1.5px solid rgba(10,31,48,.22)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-text);background:#f1f9fd}
+.btn i.bi-arrow-right{display:inline-block}
+
+/* ---------- eyebrow / tags ---------- */
+.eyebrow,.scard .tag,.pcard .tag{font-family:var(--font);font-size:.74rem;font-weight:600;letter-spacing:.1em;color:var(--brand-text)}
+.scard-no{color:var(--ink);font-weight:600}.scard-no em{color:#5d7a90}
+
+/* ---------- layout rhythm: tighter ---------- */
+.section{padding:4.8rem 0}
+.hero{padding:3.4rem 0 3.6rem}
+.statement{padding-top:4.2rem;padding-bottom:3.4rem}
+.stat-row{margin-top:2.2rem;padding-top:1.7rem;border-color:var(--line-b)}
+.stat-v{font-size:clamp(2.2rem,3.6vw,3rem);font-weight:600;color:var(--brand-text)!important;-webkit-text-fill-color:currentColor!important;letter-spacing:-.04em}
+.section-title{margin-bottom:2.4rem}
+.page-hero{padding:3.6rem 0 1rem}
+.page-inner .section{padding:4rem 0}
+@media(max-width:991px){.section,.page-inner .section{padding:3rem 0}.hero{padding-top:2rem}}
+
+/* hero background — calm, light */
+.hero-bg{background:radial-gradient(620px 380px at 80% 40%,rgba(2,135,191,.14),transparent 70%),linear-gradient(180deg,#eef8fd,#fff 92%)}
+
+/* ---------- marquee: readable ---------- */
+.marquee{padding:1rem 0;border-color:var(--line-b)}
+.marquee span{font-size:clamp(1.05rem,1.7vw,1.4rem);font-weight:500;color:#3f6a86;letter-spacing:-.02em}
+.marquee span:hover{color:var(--ink)}
+.marquee i{color:var(--brand)}
+
+/* ---------- cards ---------- */
+.scard{border-radius:22px;margin-bottom:2.4rem;border:1px solid var(--line-b)}
+.scard-txt{padding:clamp(1.6rem,3.4vw,3.2rem)}
+.scard p{max-width:420px}
+.icon-card,.plan,.incl,.form-card,.cc,.rate-card{border:1px solid var(--line-b);border-radius:14px}
+.icon-card{padding:1.5rem 1.35rem}
+.ic{width:46px;height:46px;font-size:1.3rem;margin-bottom:1rem;background:#e3f3fb;color:var(--brand-text)}
+.step-n{background:var(--brand)}
+.lt-node em{color:#3f5a70;font-weight:500}
+.lt-node b{color:#3f5a70;border-color:rgba(10,31,48,.25)}
+.lt-node.on em{color:var(--ink)}
+.step.lp{opacity:.55;filter:none}.step.lp.on{opacity:1}
+
+/* pricing */
+.dark-section{background:#eef8fd}
+.rate-card{border-top:3px solid var(--brand)}
+.rate-v{color:var(--brand-text)!important;-webkit-text-fill-color:currentColor!important;font-weight:600}
+.rate-v small{color:var(--body);font-weight:500}
+.rate-card h3{color:var(--ink);font-weight:500}
+.cc-head p,.bp-sub,.cc-link,.calc-foot{color:var(--body)}
+.bp-u,.tilde{color:#4a647a}
+.cur-switch button,.seg button{color:var(--body);font-weight:500}
+.cur-switch button.on,.seg button.on b{color:var(--ink)}
+.seg small{color:#0b7a3d}
+
+/* CTA band */
+.cta-band{border-radius:20px}
+.cta-band p{color:#e8f6fd;font-size:1rem}
+
+/* forms */
+.form-label{font-weight:500;color:var(--ink);font-size:.88rem}
+.form-control,.form-select{font-family:var(--font);color:var(--ink);font-size:.95rem;border-color:rgba(10,31,48,.22)}
+.form-control::placeholder{color:#5a7083}
+.faq .accordion-button{font-family:var(--font);font-weight:500;font-size:.98rem;color:var(--ink)}
+.faq .accordion-body{color:var(--body)}
+.legal p,.legal li{color:var(--body)}
+.legal h2{font-size:1.25rem}
+
+/* ---------- footer: bright, readable text ---------- */
+.site-footer{background:var(--ink);color:#d6e6f1;padding-top:3.6rem}
+.site-footer h6{color:#fff;font-size:.78rem;font-weight:600;letter-spacing:.1em}
+.site-footer a,.foot-about,.foot-contact,.foot-contact a{color:#d6e6f1}
+.site-footer a:hover{color:#8fdcff}
+.foot-bottom{color:#b7cfdf}
+.foot-mega{font-weight:600;letter-spacing:-.05em;font-size:clamp(2.6rem,10vw,8.5rem);background:linear-gradient(180deg,rgba(143,220,255,.35),rgba(143,220,255,0) 80%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* loader */
+.loader{background:var(--ink)}
+.ld-in span{font-family:var(--font);letter-spacing:.18em;font-size:1rem;font-weight:500}
+
+/* mobile type */
+@media(max-width:575px){
+  html{font-size:14.5px}
+  .hero-title{font-size:2.05rem}
+}
+html,body{overflow-x:clip}
+
+/* ===== fixes v2 ===== */
+/* headings on dark backgrounds must be white (CTA band was dark-on-dark) */
+.cta-band h2,.cta-band h2 .sw>i,.side-card h3,.side-card h2,.dark-bg h2{color:#fff!important}
+.cta-band .hl,.cta-band h2 .hl .sw>i{color:#8fdcff!important}
+.cta-band p,.cta-band .lead{color:#e8f6fd!important}
+.side-card p,.side-card small,.contact-list small{color:#cfe3f0!important}
+
+/* tidy headings: no lonely last word */
+h1,h2,h3,.statement-title,.section-title h2{text-wrap:balance}
+p{text-wrap:pretty}
+
+/* ---------- "Why Dial Infini" statement section ---------- */
+.statement{background:linear-gradient(180deg,#f2f9fd 0%,#fff 100%);padding:4.2rem 0 4rem;border-bottom:1px solid var(--line-b)}
+.statement .eyebrow{margin-bottom:.9rem}
+.statement-title{max-width:760px;margin:0 0 2.4rem;font-size:clamp(1.6rem,2.7vw,2.25rem)}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin:0;padding:0;border:0}
+.stat-item{position:relative;background:#fff;border:1px solid var(--line-b);border-radius:16px;padding:1.5rem 1.5rem 1.6rem;box-shadow:0 10px 28px -20px rgba(2,100,150,.35);transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden}
+.stat-item:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--brand)}
+.stat-item:hover{transform:translateY(-3px);border-color:rgba(2,135,191,.4);box-shadow:0 18px 34px -22px rgba(2,100,150,.5)}
+.stat-v{display:inline-block;font-size:2.4rem;font-weight:600;line-height:1;color:var(--brand-text)!important;background:#e6f4fb;padding:.4rem .8rem;border-radius:10px;letter-spacing:-.03em;margin-bottom:.9rem}
+.stat-item p{margin:0;max-width:none;font-size:.98rem;line-height:1.55;color:var(--ink);font-weight:500}
+@media(max-width:767px){.stat-row{grid-template-columns:1fr}.stat-v{font-size:2rem}}
+
+/* ===== v3: DM Sans — light, neat, dark text ===== */
+:root{--ink:#0E1A2B;--sea:#0E1A2B;--body:#33404F;--muted:#33404F;--sea-soft:#33404F;--brand-text:#01618F}
+body{font-weight:400;color:var(--body)}
+h1,h2,h3,h4,h5,.hero-title,.statement-title,.section-title h2,.h1-sm,.scard h3,.page-hero h1,.cta-band h2,.stat-v,.rate-v,.bp-v{font-weight:500!important;letter-spacing:-.025em}
+.hero-title{letter-spacing:-.035em}
+.hl,.hero-title .hl,.statement-title .hl,.split .hl .sw>i{font-weight:500!important}
+.brand{font-weight:700;letter-spacing:-.03em}
+.btn,.btn-brand,.btn-ghost{font-weight:600;letter-spacing:0}
+.nav-link{font-weight:500}
+.eyebrow,.scard .tag,.pcard .tag,.site-footer h6{font-weight:600;letter-spacing:.09em}
+.stat-v{font-weight:600!important}
+.icon-card h3,.step h3,.rate-card h3,.cc-head h3{font-weight:600!important}
+.check-list li{font-weight:500}
+.form-label,.faq .accordion-button{font-weight:600}
+p,li,.hero-text,.lead-sm,.section-title p{color:var(--body);font-weight:400}
+
+/* footer contact rows (multiple emails / phones / addresses) */
+.foot-contact li{display:flex;gap:.65rem;align-items:flex-start;margin-bottom:.85rem;line-height:1.5}
+.foot-contact li>i{margin-top:.2rem;flex:none;color:#8fdcff!important}
+.foot-contact li>span{display:block;min-width:0;word-break:break-word;color:#e8f3fa}
+.foot-contact .fc-label{display:block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#9fc3d9}
+.foot-contact a{color:#fff!important}.foot-contact a:hover{color:#8fdcff!important}
+
+/* ===== v4: contrast fixes ===== */
+/* dark contact card: every line light */
+.side-card,.side-card p,.side-card div,.side-card li,.side-card span,.contact-list div{color:#e8f3fa!important}
+.side-card h3{color:#fff!important}
+.contact-list small{color:#9fd6f0!important;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.15rem}
+.contact-list a{color:#fff!important}.contact-list a:hover{color:#8fdcff!important}
+.contact-list li>i{color:#8fdcff!important;background:rgba(255,255,255,.12)}
+/* any other dark surface: light text */
+.topbar,.topbar span{color:#fff}
+.loader,.loader *{color:#fff}
+/* white-on-blue buttons: slightly deeper blue so white text passes contrast */
+.btn-brand,.step-n,.page-hero .btn-brand{background:#0278AE!important}
+.btn-brand:hover{background:#016696!important}
+/* faint grey bits */
+.bp-sub s,.rv small,.ru,.ru2,.calc-foot,.tilde{color:#566a7d!important}
+.cc-pill,.seg small{color:#0a6f38!important}
+
+/* ===== v5: floating pill header (Dialpad / Hazir style) ===== */
+.site-header{position:sticky;top:0;z-index:1030;background:transparent!important;border:0!important;box-shadow:none!important;padding:.75rem 0 0;pointer-events:none}
+.site-header .navbar{padding:0}
+.site-header .navbar>.container{pointer-events:auto;max-width:1180px;background:#fff;border:1px solid rgba(14,26,43,.10);border-radius:18px;padding:.55rem .7rem .55rem 1.1rem;box-shadow:0 1px 2px rgba(14,26,43,.04),0 12px 32px -16px rgba(14,26,43,.22);transition:box-shadow .25s,border-color .25s}
+.site-header.scrolled .navbar>.container{box-shadow:0 1px 2px rgba(14,26,43,.05),0 18px 40px -16px rgba(14,26,43,.30);border-color:rgba(14,26,43,.14)}
+.site-header .brand{font-size:1.2rem}
+.site-header .brand img{height:45px}
+.site-header .navbar-collapse{align-items:center}
+.site-header .navbar-nav{margin-left:auto!important;margin-right:1.1rem!important;gap:.1rem}
+.nav-link{position:relative;font-weight:500;font-size:.92rem;color:var(--ink)!important;background:transparent!important;border-radius:8px;padding:.45rem .75rem!important}
+.nav-link:hover{color:var(--brand-text)!important;background:#f0f7fb!important}
+.nav-link.active{color:var(--brand-text)!important;background:transparent!important}
+.nav-link.active:after{display:block;content:"";position:absolute;left:.75rem;right:.75rem;bottom:.1rem;height:2px;border-radius:2px;background:var(--brand);transform:none}
+.nav-actions{display:flex;align-items:center;gap:1rem}
+.nav-alt{font-size:.92rem;font-weight:500;color:var(--ink);white-space:nowrap}
+.nav-alt:hover{color:var(--brand-text)}
+.nav-alt i{font-size:.78rem}
+.site-header .nav-cta{padding:.6rem 1.1rem;font-size:.9rem;border-radius:12px;background:linear-gradient(135deg,#01507a 0%,#0278AE 55%,#1d9fd6 100%)!important;box-shadow:0 8px 18px -10px rgba(2,120,174,.9);display:inline-flex;align-items:center;gap:.5rem}
+.site-header .nav-cta:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.site-header .nav-cta i{display:inline-block!important;transition:transform .25s}
+.site-header .nav-cta:hover i{transform:translateX(3px)}
+.navbar-toggler{pointer-events:auto;font-size:1.7rem;color:var(--ink)}
+.hero{padding-top:2.6rem}
+@media(max-width:991px){.site-header{padding-top:.5rem}.site-header .navbar>.container{margin:0 .75rem;width:auto;max-width:none;border-radius:16px;padding:.5rem .8rem}}
+/* header floats over the hero — no white strip behind the pill */
+main{margin-top:-4.5rem}
+.hero{padding-top:calc(2.6rem + 4.5rem)}
+.page-hero{padding-top:calc(3.4rem + 4.5rem)}
+.site-header .navbar>.container{justify-content:space-between}
+@media(max-width:991px){
+  .site-header .navbar>.container{width:calc(100% - 1.5rem);margin:0 auto}
+  .hero{padding-top:calc(1.6rem + 4.5rem)}
+}
+.page-inner .page-hero,.page-hero{padding-top:calc(2.6rem + 4.5rem)}
+@media(max-width:991px){.page-inner .page-hero,.page-hero{padding-top:calc(1.6rem + 4.5rem)}}
+
+/* ===== v6: header same width as site container, menu centred, no underline ===== */
+.site-header .navbar>.container{max-width:none;position:relative}   /* uses the normal Bootstrap container width, same as every section */
+.nav-link.active:after,.nav-link:after,.nav-link:hover:after{display:none!important;content:none!important}
+@media(min-width:992px){
+  .site-header .navbar-collapse{position:static;justify-content:flex-end}
+  .site-header .navbar-nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0!important;flex-direction:row}
+  .nav-actions{margin-left:auto}
+}
+/* pill edges line up exactly with the page content (Bootstrap container minus its padding) */
+@media(min-width:992px){.site-header .navbar>.container{max-width:936px;margin:0 auto}}
+@media(min-width:1200px){.site-header .navbar>.container{max-width:1116px}}
+@media(min-width:1400px){.site-header .navbar>.container{max-width:1296px}}
+
+/* footer logo */
+.foot-logo{display:inline-flex;align-items:center;gap:.6rem}
+.foot-logo img{width:auto;max-width:100%;height:auto}
+.foot-logo-badge{background:#fff;border-radius:12px;padding:.55rem .85rem}
+.foot-logo-badge span{color:var(--ink)}
