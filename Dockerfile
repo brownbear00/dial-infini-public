@@ -1,18 +1,14 @@
-FROM php:8.2-apache
+FROM node:22-alpine AS build
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
 
-WORKDIR /var/www/html
-
-COPY . /var/www/html/
-
-RUN a2enmod rewrite
-
-RUN chown -R www-data:www-data /var/www/html
-
-RUN sed -i 's/Listen 80/Listen ${PORT}/' /etc/apache2/ports.conf \
-    && sed -i 's/:80>/:${PORT}>/' /etc/apache2/sites-available/000-default.conf
-
+FROM node:22-alpine
+WORKDIR /app
+RUN npm install -g serve
+COPY --from=build /app/dist ./dist
 ENV PORT=10000
-
 EXPOSE 10000
-
-CMD ["sh", "-c", "sed -i \"s/\\${PORT}/$PORT/g\" /etc/apache2/ports.conf /etc/apache2/sites-available/000-default.conf && apache2-foreground"]
+CMD ["sh", "-c", "serve -s dist -l tcp://0.0.0.0:${PORT}"]

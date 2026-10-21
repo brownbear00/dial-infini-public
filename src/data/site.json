@@ -1,0 +1,635 @@
+{
+    "settings": {
+        "site_name": "",
+        "tagline": "Call anyone, anywhere",
+        "site_url": "https://dialinfini.com",
+        "clean_urls": 1,
+        "topbar_on": 1,
+        "topbar_text": "New: get a real phone number from any country in minutes.",
+        "topbar_link_text": "See pricing",
+        "topbar_link": "/pricing",
+        "logo": "uploads/Asset 13.png",
+        "favicon": "uploads/asset-1.png",
+        "footer_logo": "uploads/Asset 12.png",
+        "footer_logo_height": "56",
+        "color_primary": "#0287BF",
+        "color_bg": "#F5F7FB",
+        "color_dark": "#101828",
+        "email": "hello@dialinfini.com",
+        "phone": "",
+        "address": "",
+        "more_emails": [],
+        "more_phones": [],
+        "more_addresses": [],
+        "hours": "Mon – Fri, 9:00 – 18:00",
+        "appstore_url": "",
+        "playstore_url": "",
+        "facebook": "",
+        "instagram": "",
+        "x_twitter": "",
+        "linkedin": "",
+        "youtube": "",
+        "header_link_text": "",
+        "header_link": "",
+        "header_cta_text": "Get started",
+        "header_cta_link": "/contact",
+        "nav": [
+            {
+                "label": "Home",
+                "link": "/"
+            },
+            {
+                "label": "Features",
+                "link": "/features"
+            },
+            {
+                "label": "Pricing",
+                "link": "/pricing"
+            },
+            {
+                "label": "About",
+                "link": "/about"
+            },
+            {
+                "label": "Contact",
+                "link": "/contact"
+            }
+        ],
+        "footer_about": "Dial Infini gives you a real phone number from any country, HD calls, messaging and voicemail — all in one simple app.",
+        "footer_links_1_title": "Product",
+        "footer_links_1": [
+            {
+                "label": "Features",
+                "link": "/features"
+            },
+            {
+                "label": "Pricing",
+                "link": "/pricing"
+            },
+            {
+                "label": "Get a number",
+                "link": "/pricing#numbers"
+            }
+        ],
+        "footer_links_2_title": "Company",
+        "footer_links_2": [
+            {
+                "label": "About us",
+                "link": "/about"
+            },
+            {
+                "label": "Contact",
+                "link": "/contact"
+            }
+        ],
+        "footer_links_3_title": "Legal",
+        "footer_links_3": [
+            {
+                "label": "Privacy Policy",
+                "link": "/privacy"
+            },
+            {
+                "label": "Terms of Service",
+                "link": "/terms"
+            }
+        ],
+        "copyright": "© {year} Dial Infini. All rights reserved.",
+        "title_suffix": "| Dial Infini",
+        "default_og": "uploads/og-default.jpg",
+        "twitter_handle": "",
+        "google_verification": "",
+        "bing_verification": "",
+        "schema_on": 1,
+        "robots_extra": "",
+        "head_code": "",
+        "body_code": "",
+        "custom_css": "",
+        "notify_email": "hello@dialinfini.com",
+        "auto_reply_on": 1,
+        "auto_reply_subject": "We received your message",
+        "auto_reply_body": "Hi {name},\n\nThanks for contacting Dial Infini. We've received your message and will get back to you within one business day.\n\n— The Dial Infini team"
+    },
+    "meta": {
+        "home": {
+            "label": "Home",
+            "slug": ""
+        },
+        "features": {
+            "label": "Features",
+            "slug": "features"
+        },
+        "pricing": {
+            "label": "Pricing",
+            "slug": "pricing"
+        },
+        "about": {
+            "label": "About",
+            "slug": "about"
+        },
+        "contact": {
+            "label": "Contact",
+            "slug": "contact"
+        },
+        "privacy": {
+            "label": "Privacy Policy",
+            "slug": "privacy"
+        },
+        "terms": {
+            "label": "Terms of Service",
+            "slug": "terms"
+        }
+    },
+    "pages": {
+        "home": {
+            "hero": {
+                "eyebrow": "Calls • Messages • Voicemail",
+                "title": "Call anyone, anywhere with *your own number*",
+                "text": "Get a real phone number from any country, enjoy HD-quality voice calls and send messages without limits — with zero hidden fees.",
+                "cta1_text": "Get started",
+                "cta1_link": "/contact",
+                "cta2_text": "See how it works",
+                "cta2_link": "#how",
+                "note": "No contracts. Top up only what you use.",
+                "img_main": "uploads/app-messages.webp",
+                "img_phone1": "uploads/phone-dialpad.webp",
+                "img_phone2": "uploads/phone-call-anyone.webp"
+            },
+            "stats": {
+                "kicker": "Why Dial Infini",
+                "title": "Staying connected shouldn’t cost a *fortune* — or a SIM card.",
+                "items": [
+                    {
+                        "icon": "bi-cash-coin",
+                        "value": "0",
+                        "label": "hidden fees. You only pay for the calls, texts and numbers you use."
+                    },
+                    {
+                        "icon": "bi-soundwave",
+                        "value": "HD",
+                        "label": "crystal-clear voice and video calls to anyone, worldwide."
+                    },
+                    {
+                        "icon": "bi-phone",
+                        "value": "1",
+                        "label": "app for your numbers, calls, messages and voicemail."
+                    }
+                ]
+            },
+            "products": {
+                "title": "One app that turns your phone into a *global line*",
+                "text": "Everything you need to talk to the world, beautifully simple.",
+                "items": [
+                    {
+                        "tag": "Numbers",
+                        "title": "Your own number, any country",
+                        "text": "Pick a real local number in dozens of countries and stay reachable everywhere — monthly, quarterly or yearly.",
+                        "image": "uploads/phone-get-number.webp",
+                        "link": "/features",
+                        "link_text": "Explore numbers"
+                    },
+                    {
+                        "tag": "Calls",
+                        "title": "HD calls at honest rates",
+                        "text": "Crystal-clear voice calls with a built-in dial pad, recents and call history. See the per-minute price before you call.",
+                        "image": "uploads/phone-dialpad.webp",
+                        "link": "/features",
+                        "link_text": "Explore calls"
+                    },
+                    {
+                        "tag": "Messages",
+                        "title": "Message without limits",
+                        "text": "Send and receive text messages from your own number. Keep every conversation tidy in one inbox.",
+                        "image": "uploads/phone-messages.webp",
+                        "link": "/features",
+                        "link_text": "Explore messaging"
+                    },
+                    {
+                        "tag": "Voicemail",
+                        "title": "Voicemail you can see",
+                        "text": "Play, call back or delete missed messages straight from a clean waveform inbox — unlimited, included.",
+                        "image": "uploads/phone-voicemail.webp",
+                        "link": "/features",
+                        "link_text": "Explore voicemail"
+                    }
+                ]
+            },
+            "showcase": {
+                "items": [
+                    {
+                        "tag": "Calling",
+                        "title": "A dial pad that feels at home",
+                        "text": "Choose which of your numbers to call from, pick the country, and dial. Rates and balance are always one tap away.",
+                        "bullets": "Switch between your numbers instantly\nRecents and contacts in one place\nTop up credit in seconds",
+                        "image": "uploads/app-dialpad-crop.webp"
+                    },
+                    {
+                        "tag": "Messaging",
+                        "title": "Conversations, beautifully organised",
+                        "text": "A familiar chat inbox with search, unread filters and favourites — so nothing important gets lost.",
+                        "bullets": "Per-number conversations\nUnread and favourite filters\nClear per-message pricing",
+                        "image": "uploads/app-messages.webp"
+                    },
+                    {
+                        "tag": "Voicemail",
+                        "title": "Never miss what matters",
+                        "text": "Every voicemail shows up with a waveform, timestamp and one-tap call back or delete.",
+                        "bullets": "Play right in the app\nOne-tap call back\nUnlimited voicemail included",
+                        "image": "uploads/app-voicemail.webp"
+                    }
+                ]
+            },
+            "how": {
+                "title": "Up and running in *four simple steps*",
+                "text": "From download to your first call in just a few minutes.",
+                "items": [
+                    {
+                        "title": "Enter your number",
+                        "text": "Choose your country and enter your mobile number to get a one-time code.",
+                        "image": "uploads/phone-step-1.webp"
+                    },
+                    {
+                        "title": "Verify the code",
+                        "text": "Type the code we send you to confirm it’s really you.",
+                        "image": "uploads/phone-step-2.webp"
+                    },
+                    {
+                        "title": "Create your account",
+                        "text": "Add your name and email — that’s all we need to set you up.",
+                        "image": "uploads/phone-step-3.webp"
+                    },
+                    {
+                        "title": "Confirm & call",
+                        "text": "Verify your email, pick a number and start calling anyone, anywhere.",
+                        "image": "uploads/phone-step-4.webp"
+                    }
+                ]
+            },
+            "usecases": {
+                "title": "Built for people who live *across borders*",
+                "items": [
+                    {
+                        "icon": "bi-airplane",
+                        "title": "Travellers",
+                        "text": "Skip roaming fees. Keep one number and call home from anywhere."
+                    },
+                    {
+                        "icon": "bi-laptop",
+                        "title": "Freelancers & remote teams",
+                        "text": "Give clients a local number in their country, wherever you work from."
+                    },
+                    {
+                        "icon": "bi-shop",
+                        "title": "Small businesses",
+                        "text": "Separate business calls from personal ones and never miss a customer."
+                    },
+                    {
+                        "icon": "bi-people",
+                        "title": "Families & expats",
+                        "text": "Stay close to loved ones overseas with clear, affordable calls and texts."
+                    }
+                ]
+            },
+            "pricing": {
+                "title": "Simple, honest *pay-as-you-go* pricing",
+                "text": "Top up credit and use it for calls and messages. Numbers are billed on a plan that suits you.",
+                "items": [
+                    {
+                        "value": "$4.15",
+                        "unit": "/month",
+                        "title": "Your own number",
+                        "text": "Real numbers from 1 month to 1 year"
+                    },
+                    {
+                        "value": "3.6¢",
+                        "unit": "/min",
+                        "title": "Landline calls",
+                        "text": "Mobile calls from 7.2¢/min"
+                    },
+                    {
+                        "value": "8.4¢",
+                        "unit": "/SMS",
+                        "title": "National SMS",
+                        "text": "Inbound SMS & calls are unlimited"
+                    }
+                ],
+                "cta_text": "See full pricing",
+                "cta_link": "/pricing"
+            },
+            "cta": {
+                "title": "Get your global number today",
+                "text": "Start with one number. Add more whenever you need them.",
+                "cta1_text": "Get started",
+                "cta1_link": "/contact",
+                "cta2_text": "View pricing",
+                "cta2_link": "/pricing",
+                "image": "uploads/app-login.webp"
+            }
+        },
+        "features": {
+            "hero": {
+                "eyebrow": "Features",
+                "title": "Everything you need to *talk to the world*",
+                "text": "A complete phone experience in one app: numbers, calls, messages and voicemail, designed to be effortless."
+            },
+            "blocks": {
+                "items": [
+                    {
+                        "tag": "Dial pad",
+                        "title": "Call anyone with a clean, fast dial pad",
+                        "text": "Pick the number you want to call from, choose the destination country and dial. Your balance is always in view.",
+                        "bullets": "Multiple numbers, one tap to switch\nCountry selector with flags\nHD voice quality",
+                        "image": "uploads/app-dialpad-crop.webp"
+                    },
+                    {
+                        "tag": "Recents & contacts",
+                        "title": "Every call and contact, at a glance",
+                        "text": "See incoming, outgoing and missed calls with duration and the number used. Open a contact to call, message, block or delete.",
+                        "bullets": "Full call history per contact\nMissed calls highlighted\nBlock unwanted callers",
+                        "image": "uploads/app-calls.webp"
+                    },
+                    {
+                        "tag": "Messaging",
+                        "title": "Message from your own number",
+                        "text": "Send and receive texts in a modern chat inbox with unread filters, favourites and search.",
+                        "bullets": "Per-message pricing shown upfront\nUnread & favourites filters\nEmoji and attachments",
+                        "image": "uploads/app-messages.webp"
+                    },
+                    {
+                        "tag": "Voicemail",
+                        "title": "Visual voicemail that saves time",
+                        "text": "Listen with a waveform player, call back instantly or delete with one tap. Unlimited voicemail is included.",
+                        "bullets": "Waveform playback\nNew-message highlighting\nCall back in one tap",
+                        "image": "uploads/app-voicemail.webp"
+                    },
+                    {
+                        "tag": "Numbers",
+                        "title": "Real numbers in countries around the world",
+                        "text": "Browse popular countries or search for any destination. See the monthly price and expiry date for each number you own.",
+                        "bullets": "Monthly, quarterly, 6‑month & yearly plans\nSet a default number\nTravel-date numbers",
+                        "image": "uploads/app-numbers.webp"
+                    }
+                ]
+            },
+            "grid": {
+                "title": "And a whole lot more",
+                "items": [
+                    {
+                        "icon": "bi-wallet2",
+                        "title": "Credit wallet",
+                        "text": "Top up your balance and watch recent activity and costs in real time."
+                    },
+                    {
+                        "icon": "bi-telephone-inbound",
+                        "title": "Unlimited inbound",
+                        "text": "Receiving calls, SMS and voicemail on your number is unlimited."
+                    },
+                    {
+                        "icon": "bi-globe2",
+                        "title": "Global coverage",
+                        "text": "Numbers and calling to a growing list of countries."
+                    },
+                    {
+                        "icon": "bi-shield-check",
+                        "title": "Secure sign-up",
+                        "text": "One-time code and email verification protect every account."
+                    },
+                    {
+                        "icon": "bi-slash-circle",
+                        "title": "Block & manage",
+                        "text": "Block nuisance callers and keep your contacts organised."
+                    },
+                    {
+                        "icon": "bi-calendar-event",
+                        "title": "Travel numbers",
+                        "text": "Get a local number just for the dates you’re travelling."
+                    }
+                ]
+            },
+            "cta": {
+                "title": "Ready to get your number?",
+                "text": "Create your account in minutes and make your first call today.",
+                "cta_text": "Get started",
+                "cta_link": "/contact"
+            }
+        },
+        "pricing": {
+            "hero": {
+                "eyebrow": "Pricing",
+                "title": "Simple pricing, *no surprises*",
+                "text": "Choose a number plan that fits you, then top up credit for outgoing calls and messages. Rates are shown before you ever press call."
+            },
+            "calc": {
+                "title": "Pick a country, see the price",
+                "text": "Choose where you want your number and where you want to call. Prices update instantly.",
+                "phones": "us|USA|6.99|9.99|24.99|Inbound calls: 1.2¢/min, inbound SMS are free\ngb|United Kingdom|7.99|11.99|29.99|Inbound calls and inbound SMS are free\nca|Canada|6.49|9.49|23.99|Inbound calls and inbound SMS are free\nau|Australia|4.15|12.45|49.80|Inbound calls and inbound SMS are free",
+                "rates": "pk|Pakistan|7.2|7.2|22.8\nus|USA|1.2|1.2|0.8\ngb|United Kingdom|2.4|2.4|4.5\nin|India|3.1|3.1|3.9\nae|United Arab Emirates|9.6|9.6|11.2",
+                "eur": "0.92",
+                "gbp": "0.79",
+                "phone_title": "Phone Number",
+                "phone_sub": "Subscribe to a local number",
+                "rates_title": "Calling & SMS Rates",
+                "rates_sub": "Outgoing call & SMS prices by destination",
+                "phone_link_text": "Get a {country} number",
+                "rates_link_text": "Need bulk rates for {country}? Talk to us",
+                "cta_link": "/contact",
+                "footnote": "Prices are indicative and may change. Taxes may apply."
+            },
+            "included": {
+                "title": "Included with every number",
+                "items": [
+                    {
+                        "icon": "bi-chat-dots",
+                        "title": "Unlimited inbound SMS",
+                        "text": "Receive as many texts as you like"
+                    },
+                    {
+                        "icon": "bi-telephone-inbound",
+                        "title": "Unlimited inbound calls",
+                        "text": "Anyone can call you, free"
+                    },
+                    {
+                        "icon": "bi-voicemail",
+                        "title": "Unlimited voicemail",
+                        "text": "Included on every number"
+                    },
+                    {
+                        "icon": "bi-send",
+                        "title": "8.4¢ per SMS",
+                        "text": "National text messages"
+                    },
+                    {
+                        "icon": "bi-telephone",
+                        "title": "3.6¢ per minute",
+                        "text": "Landline calls"
+                    },
+                    {
+                        "icon": "bi-phone",
+                        "title": "7.2¢ per minute",
+                        "text": "Mobile calls"
+                    }
+                ]
+            },
+            "credit": {
+                "title": "Top up once, use it anywhere",
+                "text": "Add credit to your wallet and it covers outgoing calls and messages to any destination. Track every charge in your recent activity — no hidden fees, ever.",
+                "bullets": "Instant top-ups\nTransparent per-minute and per-SMS pricing\nFull activity history",
+                "image": "uploads/phone-credit.webp"
+            },
+            "faq": {
+                "title": "Frequently asked questions",
+                "items": [
+                    {
+                        "q": "How does Dial Infini work?",
+                        "a": "Create an account, choose a phone number from the country you like, add credit and start calling and messaging from the app."
+                    },
+                    {
+                        "q": "Are there any hidden fees?",
+                        "a": "No. Every call and message rate is shown in the app before you use it, and inbound calls, SMS and voicemail are unlimited."
+                    },
+                    {
+                        "q": "Can I have more than one number?",
+                        "a": "Yes. You can own several numbers from different countries and switch between them from the dial pad."
+                    },
+                    {
+                        "q": "What happens when my number plan ends?",
+                        "a": "You’ll see the expiry date for every number in the app, so you can renew whenever you’re ready."
+                    },
+                    {
+                        "q": "How do I top up credit?",
+                        "a": "Open the Credit tab, choose Top Up Credit and add funds. The balance is available immediately."
+                    }
+                ]
+            }
+        },
+        "about": {
+            "hero": {
+                "eyebrow": "About us",
+                "title": "Communication that *has no borders*",
+                "text": "We build tools that let people stay connected to the ones who matter, wherever life takes them."
+            },
+            "story": {
+                "title": "Why we built Dial Infini",
+                "text": "Staying in touch across countries shouldn’t mean juggling SIM cards, confusing plans or surprise bills.\n\nDial Infini puts a real phone number from any country in your pocket, with clear rates, HD calls, messaging and voicemail in one beautifully simple app.\n\nEdit this text from your dashboard to tell your own story.",
+                "image": "uploads/app-login.webp"
+            },
+            "values": {
+                "title": "What we stand for",
+                "items": [
+                    {
+                        "icon": "bi-eye",
+                        "title": "Transparency",
+                        "text": "Clear prices, shown before you spend. No hidden fees."
+                    },
+                    {
+                        "icon": "bi-lightning-charge",
+                        "title": "Simplicity",
+                        "text": "Powerful features wrapped in an interface anyone can use."
+                    },
+                    {
+                        "icon": "bi-shield-lock",
+                        "title": "Trust",
+                        "text": "Verified accounts and secure sign-in keep you protected."
+                    },
+                    {
+                        "icon": "bi-globe-americas",
+                        "title": "Global by design",
+                        "text": "Built for people and businesses who connect across borders."
+                    }
+                ]
+            },
+            "cta": {
+                "title": "Join the conversation",
+                "text": "Get your first number and see how simple global calling can be.",
+                "cta_text": "Get started",
+                "cta_link": "/contact"
+            }
+        },
+        "contact": {
+            "hero": {
+                "eyebrow": "Contact",
+                "title": "Let’s *talk*",
+                "text": "Questions about numbers, pricing or your account? Send us a message and we’ll reply within one business day."
+            },
+            "form": {
+                "title": "Send us a message",
+                "topics": "General question\nPricing\nNumbers & countries\nTechnical support\nPartnerships",
+                "button": "Send message",
+                "success": "Thank you! Your message has been sent — we’ll be in touch shortly.",
+                "side_title": "Prefer to reach us directly?",
+                "side_text": "Our team is happy to help with anything you need."
+            }
+        },
+        "privacy": {
+            "content": {
+                "title": "Privacy Policy",
+                "updated": "October 2026",
+                "body": "<p>This Privacy Policy explains how Dial Infini (“we”, “us”) collects, uses and protects information when you use our website and app.</p>\n<h2>Information we collect</h2>\n<ul><li><strong>Account information:</strong> your name, email address and phone number.</li><li><strong>Usage information:</strong> call and message metadata needed to provide and bill the service.</li><li><strong>Technical information:</strong> device type, IP address and cookies used to keep the site secure and working.</li></ul>\n<h2>How we use information</h2>\n<p>We use your information to provide and improve the service, process payments, prevent fraud, provide support and comply with legal obligations.</p>\n<h2>Sharing</h2>\n<p>We do not sell your personal information. We share data only with service providers who help us operate the service, or when required by law.</p>\n<h2>Your rights</h2>\n<p>You may request access to, correction of or deletion of your personal information by contacting us.</p>\n<h2>Contact</h2>\n<p>Questions about this policy? Reach out via our contact page.</p>\n<p><em>This is a general template — please have it reviewed to match your business and local law.</em></p>"
+            }
+        },
+        "terms": {
+            "content": {
+                "title": "Terms of Service",
+                "updated": "October 2026",
+                "body": "<p>By using Dial Infini you agree to these Terms. Please read them carefully.</p>\n<h2>The service</h2>\n<p>Dial Infini provides phone numbers, calling, messaging and voicemail over the internet. Availability and features may vary by country.</p>\n<h2>Accounts</h2>\n<p>You must provide accurate information and keep your login secure. You are responsible for activity under your account.</p>\n<h2>Payments and credit</h2>\n<p>Number plans and credit are billed as shown in the app. Rates are displayed before you use the service. Unused credit and plan fees may be non-refundable except where required by law.</p>\n<h2>Acceptable use</h2>\n<p>You may not use the service for spam, fraud, harassment or any unlawful activity. We may suspend accounts that breach these rules.</p>\n<h2>Liability</h2>\n<p>The service is provided “as is”. To the extent permitted by law, we are not liable for indirect or consequential losses.</p>\n<h2>Changes</h2>\n<p>We may update these Terms from time to time. Continued use means you accept the updated Terms.</p>\n<p><em>This is a general template — please have it reviewed to match your business and local law.</em></p>"
+            }
+        }
+    },
+    "seo": {
+        "home": {
+            "title": "Dial Infini – Call anyone, anywhere with your own number",
+            "description": "Get a real phone number from any country. Crystal-clear HD calls, unlimited messaging and voicemail in one app — with zero hidden fees.",
+            "keywords": "virtual phone number, international calls, VoIP app, SMS, voicemail, Dial Infini",
+            "og_image": "",
+            "canonical": "",
+            "robots": "index,follow"
+        },
+        "features": {
+            "title": "Features – Calls, Messages, Voicemail & Numbers",
+            "description": "Explore Dial Infini: HD calling, messaging from your own number, visual voicemail, call history and real phone numbers in dozens of countries.",
+            "keywords": "virtual number features, VoIP calling, visual voicemail, international SMS",
+            "og_image": "",
+            "canonical": "",
+            "robots": "index,follow"
+        },
+        "pricing": {
+            "title": "Pricing – Phone numbers from $4.15/month",
+            "description": "Transparent pricing for virtual phone numbers, calls and SMS. Pay-as-you-go credit with unlimited inbound calls, SMS and voicemail.",
+            "keywords": "virtual number pricing, international call rates, SMS rates",
+            "og_image": "",
+            "canonical": "",
+            "robots": "index,follow"
+        },
+        "about": {
+            "title": "About Dial Infini",
+            "description": "Dial Infini makes global communication simple: real phone numbers, HD calls and messaging with zero hidden fees.",
+            "keywords": "about Dial Infini",
+            "og_image": "",
+            "canonical": "",
+            "robots": "index,follow"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "Questions about Dial Infini? Send us a message and our team will get back to you within one business day.",
+            "keywords": "contact Dial Infini, support",
+            "og_image": "",
+            "canonical": "",
+            "robots": "index,follow"
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "How Dial Infini collects, uses and protects your personal information.",
+            "keywords": "",
+            "og_image": "",
+            "canonical": "",
+            "robots": "index,follow"
+        },
+        "terms": {
+            "title": "Terms of Service",
+            "description": "The terms that apply when you use Dial Infini’s website, app and services.",
+            "keywords": "",
+            "og_image": "",
+            "canonical": "",
+            "robots": "index,follow"
+        }
+    }
+}

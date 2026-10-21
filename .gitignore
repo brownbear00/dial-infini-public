@@ -3,6 +3,9 @@ data/admin.json.php
 data/smtp.json.php
 data/leads.json.php
 
+node_modules
+dist
+
 # OS junk
 Thumbs.db
 Desktop.ini
